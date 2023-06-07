@@ -61,7 +61,35 @@ namespace BinarySearchTree
                 }
             }
         }
-           
-     }
+        public bool Search(int data)
+
+        {
+            if (Root == null)
+            {
+                return false;
+            }
+
+            Node temp = Root;
+
+            while (temp != null)
+            {
+                if (data == temp.Data)
+                {
+                    return true;
+                }
+                else if (data < temp.Data)
+                {
+                    temp = temp.Left;
+                }
+                else if (data > temp.Data)
+                {
+                    temp = temp.Right;
+                }
+            }
+
+            return false;
+        }
+
+    }
 }
 
