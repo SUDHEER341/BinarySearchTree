@@ -18,6 +18,7 @@
             //if data found return true or false
             Console.WriteLine(bst.Search(78));
             bst.InOrder();
+            bst.Preorder();
 
         }
     }

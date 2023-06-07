@@ -105,6 +105,21 @@ namespace BinarySearchTree
                 DisplayInorder(node.Right);
             }
         }
+
+        public void Preorder()
+        {
+            DisplayPreorder(Root);
+        }
+
+        private void DisplayPreorder(Node node)
+        {
+            if (node != null)
+            {
+                Console.Write(node.Data + " ");
+                DisplayPreorder(node.Left);
+                DisplayPreorder(node.Right);
+            }
+        }
     }
 }
 
