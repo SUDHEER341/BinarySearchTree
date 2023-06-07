@@ -90,6 +90,21 @@ namespace BinarySearchTree
             return false;
         }
 
+        public void InOrder()
+        {
+            DisplayInorder(Root);
+
+        }
+
+        private void DisplayInorder(Node node)
+        {
+            if (node != null)
+            {
+                DisplayInorder(node.Left);
+                Console.Write(node.Data + " ");
+                DisplayInorder(node.Right);
+            }
+        }
     }
 }
 

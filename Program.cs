@@ -16,7 +16,8 @@
             bst.Add(129);
 
             //if data found return true or false
-            Console.WriteLine(bst.Search(787));
+            Console.WriteLine(bst.Search(78));
+            bst.InOrder();
 
         }
     }
