@@ -19,6 +19,7 @@
             Console.WriteLine(bst.Search(78));
             bst.InOrder();
             bst.Preorder();
+            bst.Postorder();
 
         }
     }

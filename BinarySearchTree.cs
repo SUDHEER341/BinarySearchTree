@@ -104,6 +104,7 @@ namespace BinarySearchTree
                 Console.Write(node.Data + " ");
                 DisplayInorder(node.Right);
             }
+            Console.WriteLine();
         }
 
         public void Preorder()
@@ -119,6 +120,22 @@ namespace BinarySearchTree
                 DisplayPreorder(node.Left);
                 DisplayPreorder(node.Right);
             }
+            Console.WriteLine();
+        }
+        public void Postorder()
+        {
+            DisplayPostorder(Root);
+        }
+
+        private void DisplayPostorder(Node node)
+        {
+            if (node != null)
+            {
+                DisplayPostorder(node.Left);
+                DisplayPostorder(node.Right);
+                Console.Write(node.Data + " ");
+            }
+            
         }
     }
 }
